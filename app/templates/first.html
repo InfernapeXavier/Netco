@@ -137,14 +137,6 @@
     }
 </script>
 
-{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-<center>
-    <div class="alert alert-info" role="alert" style="width:100%; text-align:left;">
-        <div style="padding-left:10px">{{ message }}</div>
-    </div>
-</center>
-{% endfor %} {% endif %} {% endwith %}
-
 <div class="container-fluid">
     <div class="row" style="padding-bottom:40px">
 
@@ -160,5 +152,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
